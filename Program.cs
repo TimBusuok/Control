@@ -18,3 +18,6 @@
 
 Console.WriteLine("Введите массив строк:");
 string[] array = Console.ReadLine().Split();
+//Создаём новый массив для строк длиной не более 3 символов
+string[] arrayNew = new string[array.Length];
+int j = 0;
