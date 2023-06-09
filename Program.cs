@@ -10,9 +10,11 @@
 // сделали основу
 Console.WriteLine("Введите массив строк:");
 string[] array = Console.ReadLine().Split();
+
 //Создаём новый массив для строк длиной не более 3 символов
 string[] arrayNew = new string[array.Length];
 int x = 0;
+
 //// Фильтруем строки по длине и записываем в новый массив
 for (int i = 0; i < array.Length; i++)
 {
@@ -21,4 +23,10 @@ for (int i = 0; i < array.Length; i++)
         arrayNew[j] = array[i];
         x++;
     }
+}
+// Выводим новый массив на экран
+Console.WriteLine("\nСтроки длиной не более 3 символов:");
+for (int i = 0; i < j; i++)
+{
+    Console.WriteLine(arrayNew[i]);
 }
