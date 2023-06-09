@@ -7,17 +7,18 @@
 // создать функцию которая будет проверять каждый элемент на размер
 // вывести новый массив в консоль
 
-
-
-
-
-
-
-
-
-
+// сделали основу
 Console.WriteLine("Введите массив строк:");
 string[] array = Console.ReadLine().Split();
 //Создаём новый массив для строк длиной не более 3 символов
 string[] arrayNew = new string[array.Length];
-int j = 0;
+int x = 0;
+//// Фильтруем строки по длине и записываем в новый массив
+for (int i = 0; i < array.Length; i++)
+{
+    if (array[i].Length <= 3)
+    {
+        arrayNew[j] = array[i];
+        x++;
+    }
+}
