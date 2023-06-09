@@ -20,13 +20,13 @@ for (int i = 0; i < array.Length; i++)
 {
     if (array[i].Length <= 3)
     {
-        arrayNew[j] = array[i];
+        arrayNew[x] = array[i];
         x++;
     }
 }
 // Выводим новый массив на экран
-Console.WriteLine("\nСтроки длиной не более 3 символов:");
-for (int i = 0; i < j; i++)
+Console.WriteLine("\nСтроки длиной не более 3:");
+for (int i = 0; i < x; i++)
 {
     Console.WriteLine(arrayNew[i]);
 }
